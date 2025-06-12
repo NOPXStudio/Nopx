@@ -1,0 +1,260 @@
+#budget-form {
+    padding: 4rem 2rem;
+    background-image: url(/assets/imgs/bg-poliglon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+
+    & h2 {
+        margin: 0 auto;
+        color: var(--gray); 
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        
+    }
+        & h2::after {
+            content: '';
+            position: absolute; 
+            left: 0;
+            bottom: -1rem; 
+            width: 2rem; 
+            height: .25rem; 
+            background-color: var(--primary-color);
+            transition: width 0.3s ease-out; 
+        }
+
+        & h2:hover::after {
+        width: 100%; 
+        }   
+       
+}
+
+.container {
+    max-width: 80rem; 
+    width: 100%; 
+    margin: 3rem auto; 
+    padding: 2rem; 
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    color: var(--gray);
+}
+
+    .container p {
+        font: var(--form-text-mobile);
+        color: var(--secondary-color);
+    }     
+
+        .wpp-button-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%; 
+            padding: 0.75rem 1rem; 
+            font: var(--button-mobile);
+            color: var(--white);
+            background-color: var(--primary-color);
+            cursor: pointer; 
+            border: 0;   
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.165); 
+        }
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+label {
+    font: 500 1.75rem var(--ff);
+    color: var(--gray);
+    margin-bottom: 1rem; 
+
+    & span {
+        font: var(--form-text-mobile);
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    display: block; 
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: 0;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    outline: none;
+
+    color: var(--gray);
+    font: var(--form-text-mobile);
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(246, 5, 198, 0.25);
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+}
+
+.radio-group .radio-option label {
+    display: inline-flex; 
+    align-items: center; 
+    margin-right: 15px;
+    margin-bottom: 0;
+    cursor: pointer;
+    color: var(--gray);
+    font: var(--form-text-mobile);
+    white-space: nowrap;
+}
+
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+    box-shadow: none;
+    transition: none;
+    accent-color: var(--primary-color);
+}
+
+.select-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.select-wrapper i {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--gray);
+}
+
+.checkbox-group {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    color: var(--gray);
+    font: var(--form-text-mobile);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: none;
+    accent-color: var(--primary-color);
+}
+
+.submit-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    font: var(--title-lg-mb);
+    color: var(--gray);
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    outline: none;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.165);
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.submit-button:focus {
+    box-shadow: 0 0 0 3px rgba(245, 4, 181, 0.5);
+    outline: none;
+}
+
+.services-section {
+    margin-bottom: 1.5rem;
+}
+
+.project-description {
+    display: none;
+    background-color: #f9f1f8;
+    border-left: 4px solid var(--primary-color);
+    padding: 0.75rem 1rem;
+    margin-top: 0.75rem;
+    font: 1.5rem; 
+    color: var(--primary-color);
+
+    & b {
+        font-weight: 500;
+    }
+}
+
+.contact-button {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    gap: 1rem;
+    font: var(--title-lg-mb);
+    margin-bottom: 4rem;
+
+    & a {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    & h4 {
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 64rem) {
+    .contact-button {
+        & h4 {
+            font: var(--text-xl-tb);
+        }
+    }
+}
+
+@media (min-width: 80rem) {
+    .contact-button {
+        & a {
+            font: var(--text-xl-tb);
+            flex-direction: row;
+            gap: 1rem;
+        }
+    }
+
+    .submit-button {
+            font: var(--title-sm-tb);
+
+        }
+}

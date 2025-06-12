@@ -1,0 +1,132 @@
+main {
+    background-image: url(/assets/imgs/cimento-preto.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 2rem 4rem 2rem;
+}
+
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#hero-img {
+    width: 18rem;
+    margin: 3rem auto;
+}
+
+.text-container {
+    text-align: center;
+    color: var(--white);
+    padding: var(--default-pd-lg-mobile);
+
+    & h1 {
+        margin-bottom: 3rem;
+    }
+
+    & h2 {
+        margin-bottom: 3rem;
+    }
+
+    & h3 {
+        margin-bottom: 2rem;
+    }
+
+    & h4 {
+        margin-left: 1rem;
+    }
+
+    & p {
+        margin-bottom: 1rem;
+    }
+    & b {
+        color: var(--primary-color);
+        font: inherit;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 64rem) {
+    #hero-img {
+        display: none;
+    }
+    
+    .logo-wrapper {
+        display: grid;
+    }
+
+    .hero {
+        width: 70%;
+    }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        gap: 5rem;   
+    }
+
+    .text-container {
+        text-align: left;
+        color: var(--white);
+   
+
+    & h1 {
+        margin-bottom: 3rem;
+    }
+
+    
+    & h2 {
+        margin-bottom: 5rem;
+    }
+    
+    & h3 {
+        margin-bottom: 3rem;
+    }
+
+    & h4 {
+        margin-left: 1rem;
+    }
+
+    & p {
+        margin-bottom: 1rem;
+    }
+    & b {
+        color: var(--primary-color);
+        font: inherit;
+        font-weight: 700;
+    }
+}}
+
+@media (min-width: 80rem) {
+    main {
+        padding: 20rem 20rem 5rem;
+        justify-content: space-between;
+    }
+
+    .hero {
+        width: 70%;     
+    }
+
+    h2 {
+        margin-bottom: 100rem;
+    }
+
+}
+
+@media (min-width: 120rem) {
+    main {
+        padding: 20rem 80rem 5rem;
+        justify-content: space-between;
+    }
+
+
+}
+
+
+

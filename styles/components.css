@@ -1,0 +1,106 @@
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+
+
+
+/*BUTTONS*/
+#btn-menu {
+all: unset;
+height: 4rem;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  box-shadow: 0 6px 12px rgba(70, 70, 70, 0.157);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.031);
+  border: 1px solid var(--white);
+  border-radius: 1rem;
+  padding: var(--pd-sm-mb);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+
+.card:hover {
+  scale: 1.02;
+  border: 1px solid var(--primary-color);
+}
+
+.card i {
+  font-size: 3rem;
+  color: var(--primary-color);
+
+  margin-bottom: 1rem;
+}
+
+
+hr {
+  background: #fff;
+  background: -webkit-linear-gradient(to right, #ED145B, #91A3AD); 
+  background: linear-gradient(to right, #ED145B, #91A3AD); 
+
+  border: none;
+  height: 0.1rem;
+  width: 90%;
+  margin: 2rem auto; 
+}
+
+ 
+
+.hamburger .hamburger-inner,
+.hamburger .hamburger-inner::before,
+.hamburger .hamburger-inner::after {
+  background-color: var(--secondary-color)
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: var(--secondary-color);
+}
+
+
+#fixed-button {
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  bottom: 5%;
+}
+
+
+
+@media (min-width: 80rem) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+@media (min-width: 96rem) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+}

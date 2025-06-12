@@ -1,0 +1,222 @@
+
+#about {
+    background-image: url(../assets/imgs/bg-about.webp);
+    background-size: cover;
+    padding: var(--pd-base-mb);
+    text-align: center;
+
+    & h2 {
+        color: var(--white);
+    }
+
+    & p {
+        text-align: center;
+    }
+
+}
+
+
+#advantages {
+    padding: var(--pd-base-mb);
+    background-image: url(/assets/imgs/bg-black-cubic.jpg);
+    background-size: cover;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+
+    & h3 {
+        margin-bottom: 3rem;
+    }
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+  gap: 0.5rem;              
+  margin-bottom: .5rem;       
+  text-align: center;
+}
+
+
+
+#services {
+    background-image: url(/assets/imgs/bg-dots-pink.png);
+    background-size: cover;
+    background-position: left;
+    padding: var(--pd-base-mb);
+    text-align: center;
+
+    & h2 {
+        margin-bottom: 3rem;
+    }
+
+    & h3 {
+        margin-bottom: 2rem;
+
+        & b {
+            text-transform: uppercase;
+        }
+    }  
+}
+
+
+#footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/assets/imgs/bg-squares.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 3rem;
+
+    & hr {
+        background: var(--black);
+        margin-top: 1rem;
+    }
+
+    & img {
+        width: 24rem;
+        margin: 0 auto 4rem;
+    }
+
+    & p {
+        font: var(--form-text-mobile);
+    }
+}
+
+.card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30rem;
+    margin: 0 auto;
+    padding: 2rem;
+    
+    & h4 {
+        font: var(--button-mobile);
+    }
+
+    & p {
+        font: var(--form-text-mobile);
+    }
+
+    & .wpp-button-form {
+        font: var(--form-text-mobile);
+        background-color: var(--black);
+        margin-bottom: 3rem;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    }
+
+}
+
+#logo-footer {
+    align-items: center;
+    gap: 0;
+}
+
+
+.wpp-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--black);
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+
+    & i {
+        color: var(--white);
+    }
+    }
+
+@media (min-width: 64rem) {
+    #about {
+        background-image: url(../assets/imgs/bg-about.webp);
+        padding: var(--pd-base-tb);
+    }
+
+    #advantages, #services {
+        padding: var(--pd-base-tb);
+    }
+
+    #services {
+        & .text-container {
+            text-align: center;
+        }
+
+        & .cards {
+            padding: var(--pd-sm-tb);
+        }
+    }
+
+    #footer {
+        padding: var(--pd-base-tb);
+        flex-direction: row;
+
+        & hr {
+            display: none;
+        }
+
+        & #logo-footer{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            & img {
+                width: 30rem;
+            }
+
+            & p {
+                font: var(--text-base-tb);
+            }
+        }
+        .card-wrapper {
+            width: 50%;
+
+            & h4 {
+                font: var(--title-base-tb);
+            }
+
+            & p {
+                font: var(--text-xl-tb);
+            }
+        }
+    }
+
+    #logo-footer> :first-child {
+        display: none;
+    }
+} /*FIM*/
+
+@media (min-width: 80rem) {
+    #about, #advantages, #services, #faq, #footer {
+        padding: var(--pd-base-dk);
+    }
+}
+
+@media (min-width: 96rem) {
+    #about, #advantages, #services, #faq, #footer {
+        padding: 10rem 30rem;
+    }
+}
+
+@media (min-width: 120rem) {
+    #about, #advantages, #services, #budget-form, #faq {
+       & h2{
+           margin-bottom: 6rem;
+    }
+    }
+
+    #about, #advantages, #services, #faq, #footer {
+        padding: 10rem 80rem;
+    }
+
+    .card-wrapper {
+        display: none;
+    }
+}
