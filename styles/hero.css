@@ -121,7 +121,16 @@ main {
 
 @media (min-width: 120rem) {
     main {
-        padding: 20rem 80rem 5rem;
+        padding: 20rem 40rem 5rem;
+        justify-content: space-between;
+    }
+
+
+}
+
+@media (min-width: 120rem) {
+    main {
+        padding: 20rem 60rem 5rem;
         justify-content: space-between;
     }
 
