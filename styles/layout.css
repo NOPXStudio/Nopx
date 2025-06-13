@@ -1,6 +1,6 @@
 
 #about {
-    background-image: url(https://nopxstudio.github.io/Nopx/assets/imgs/bg-about.webp);
+    background-image: url(../assets/imgs/bg-about.webp);
     background-size: cover;
     padding: var(--pd-base-mb);
     text-align: center;
@@ -44,7 +44,7 @@
 
 
 #services {
-    background-image: url('Nopx/assets/imgs/bg-dots-pink');
+    background-image: url(../assets/imgs/bg-black-cubic.jpg);
     background-size: cover;
     background-position: left;
     padding: var(--pd-base-mb);
@@ -68,7 +68,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url('Nops/assets/imgs/bg-squares.jpg');
+    background-image: url(../assets/imgs/bg-squares.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 3rem;
@@ -136,7 +136,6 @@
 
 @media (min-width: 64rem) {
     #about {
-        background-image: url('Nops/assets/imgs/bg-about.webp');
         padding: var(--pd-base-tb);
     }
 
