@@ -1,6 +1,6 @@
 
 #about {
-    background-image: url(../assets/imgs/bg-about.webp);
+    background-color: #0e0e0e;
     background-size: cover;
     padding: var(--pd-base-mb);
     text-align: center;
@@ -18,7 +18,7 @@
 
 #advantages {
     padding: var(--pd-base-mb);
-    background-image: url(../assets/imgs/bg-dots-pink.png);
+    background-color: #0e0e0e;
     background-size: cover;  
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@
 
 
 #services {
-    background-image: url(../assets/imgs/bg-black-cubic.jpg);
+    background-color: #0e0e0e;
     background-size: cover;
     background-position: left;
     padding: var(--pd-base-mb);
